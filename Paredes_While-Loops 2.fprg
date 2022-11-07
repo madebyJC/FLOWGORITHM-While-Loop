@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="JANCARLOPAREDES"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-27 05:26:30 pm"/>
+        <attribute name="created" value="SkFOQ0FSTE9QQVJFREVTO0RFU0tUT1AtNzQ1R1ZOMzsyMDIyLTEwLTI0OzA4OjAwOjExIHBtOzM0NjI="/>
+        <attribute name="edited" value="SkFOQ0FSTE9QQVJFREVTO0RFU0tUT1AtNzQ1R1ZOMzsyMDIyLTEwLTI3OzA1OjI2OjMwIHBtOzU7MzU4Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="volt, voltInput" type="Integer" array="False" size=""/>
+            <assign variable="volt" expression="0"/>
+            <assign variable="voltInput" expression="0"/>
+            <output expression="&quot;Input the voltage simultaneously: &quot;" newline="True"/>
+            <while expression="voltInput &lt; 6">
+                <input variable="voltInput"/>
+                <assign variable="volt" expression="volt + 1"/>
+            </while>
+            <output expression="&quot;The total number of input is &quot; &amp; volt" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

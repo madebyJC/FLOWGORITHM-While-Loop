@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="JANCARLOPAREDES"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-27 05:26:13 pm"/>
+        <attribute name="created" value="SkFOQ0FSTE9QQVJFREVTO0RFU0tUT1AtNzQ1R1ZOMzsyMDIyLTEwLTI0OzA3OjQ3OjQ2IHBtOzM0ODA="/>
+        <attribute name="edited" value="SkFOQ0FSTE9QQVJFREVTO0RFU0tUT1AtNzQ1R1ZOMzsyMDIyLTEwLTI3OzA1OjI2OjEzIHBtOzI7MzU4MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pincode, pincodeInput" type="Integer" array="False" size=""/>
+            <assign variable="pincode" expression="123456"/>
+            <output expression="&quot;Input the correct pincode: &quot;" newline="True"/>
+            <input variable="pincodeInput"/>
+            <while expression="pincodeInput != pincode">
+                <output expression="&quot;Error, wrong pincode&quot;" newline="True"/>
+                <output expression="&quot;Input the correct pincode: &quot;" newline="True"/>
+                <input variable="pincodeInput"/>
+            </while>
+            <output expression="&quot;Congratulations, the pincode is correct&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

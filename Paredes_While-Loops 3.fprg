@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="JANCARLOPAREDES"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-27 05:25:54 pm"/>
+        <attribute name="created" value="SkFOQ0FSTE9QQVJFREVTO0RFU0tUT1AtNzQ1R1ZOMzsyMDIyLTEwLTI0OzA4OjA3OjQzIHBtOzM0NzQ="/>
+        <attribute name="edited" value="SkFOQ0FSTE9QQVJFREVTO0RFU0tUT1AtNzQ1R1ZOMzsyMDIyLTEwLTI3OzA1OjI1OjU0IHBtOzI7MzU4NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, numInput" type="Integer" array="False" size=""/>
+            <assign variable="num" expression="0"/>
+            <output expression="&quot;Input the number simultaneously, the program will stop if the number is greater than or equal to 100&quot;" newline="True"/>
+            <while expression="num &lt;= 99">
+                <input variable="numInput"/>
+                <assign variable="num" expression="num + numInput"/>
+                <output expression="&quot;The total number is: &quot; &amp; num" newline="True"/>
+            </while>
+            <output expression="&quot;The total number has exceeded 100! The program will now stop&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
